@@ -5,9 +5,19 @@
 
 ```html
 <menu-recursion
-    :item="{label='工作台',children=['选项一','选项二','选项三']}"
->
+        :item="menu"
+      >
+       
 </menu-recursion>
+
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
+    return{
+        menu: {menuIcon:"",label:"工作台",children:['选项一','选项二','选项三']},
+    }
+})
+</script>
 ```
 
 ## 总结：
@@ -17,4 +27,4 @@
 ### MenuPlugin相关属性
 | 参数 | 说明                       | 类型   | 可选值 | 默认值 |
 | ---- | -------------------------- | ------ | ------ | ------ |
-| item | 定义导航栏的名字和二级菜单 | object | | |
+| item | 定义导航栏的名字、图标和二级菜单 | object | | |
