@@ -5,6 +5,7 @@
     * [Container容器高度自适应](text/Container-zi-shi-ying.md)
     * [DictPlugin选择器](text/DictPlugin-xun-ze-qi.md)
     * [G2Plugin](text/G2Plugin.md)
+    * [layout](text/layout.md)
     * [MenuPlugin导航菜单](text/MenuPlugin-dao-hang.md)
     * [PageTable分页](text/PageTable-fen-ye.md)
     * [RemoteSelectPlugin清空选择器](text/RemoteSelectPlugin-qing-kong.md)

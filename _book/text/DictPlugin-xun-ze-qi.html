@@ -155,7 +155,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.1.5" data-path="MenuPlugin-dao-hang.html">
+        <li class="chapter " data-level="1.1.5" data-path="layout.html">
+            
+                <a href="layout.html">
+            
+                    
+                    layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6" data-path="MenuPlugin-dao-hang.html">
             
                 <a href="MenuPlugin-dao-hang.html">
             
@@ -168,7 +181,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.1.6" data-path="PageTable-fen-ye.html">
+        <li class="chapter " data-level="1.1.7" data-path="PageTable-fen-ye.html">
             
                 <a href="PageTable-fen-ye.html">
             
@@ -181,7 +194,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.1.7" data-path="RemoteSelectPlugin-qing-kong.html">
+        <li class="chapter " data-level="1.1.8" data-path="RemoteSelectPlugin-qing-kong.html">
             
                 <a href="RemoteSelectPlugin-qing-kong.html">
             
@@ -194,7 +207,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.1.8" data-path="TitlePlugin-biao-tou.html">
+        <li class="chapter " data-level="1.1.9" data-path="TitlePlugin-biao-tou.html">
             
                 <a href="TitlePlugin-biao-tou.html">
             
@@ -207,7 +220,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.1.9" data-path="ToolBar-an-niu-zu.html">
+        <li class="chapter " data-level="1.1.10" data-path="ToolBar-an-niu-zu.html">
             
                 <a href="ToolBar-an-niu-zu.html">
             
@@ -273,27 +286,80 @@
                                 <h1 id="dictplugin&#x7EC4;&#x4EF6;">DictPlugin&#x7EC4;&#x4EF6;</h1>
 <h2 id="&#x6982;&#x62EC;">&#x6982;&#x62EC;</h2>
 <p><strong>DictPlugin</strong>&#x8BBE;&#x8BA1;&#x4E00;&#x4E2A;&#x9009;&#x62E9;&#x5668;&#xFF0C;&#x901A;&#x8FC7; <em>dict</em> &#x5C5E;&#x6027;&#x6765;&#x6DFB;&#x52A0;&#x9009;&#x62E9;&#x5668;&#x4E2D;&#x7684;&#x9009;&#x9879;&#xFF0C;&#x5176;&#x5C5E;&#x6027;&#x503C;&#x4E3A;Array&#xFF0C;&#x7EC4;&#x4EF6;&#x4E2D;&#x4F7F;&#x7528; <em>item.itemCode</em>&#x3001; <em>item.itemName</em>&#x5206;&#x522B;&#x5B9A;&#x4E49; <em>key&#x3001;value</em>&#x548C; <em>label</em>&#x7684;&#x503C;&#x3002;<em>placeholder</em>&#x5B9A;&#x4E49;&#x5360;&#x4F4D;&#x7B26;</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">dict</span>
-    <span class="hljs-attr">:dict</span>=<span class="hljs-string">&quot;[
-        {itemCode:&apos;&#x9009;&#x9879;1&apos;,itemName:&apos;&#x86CB;&#x7CD5;&apos;},
-        {itemCode:&apos;&#x9009;&#x9879;2&apos;,itemName:&apos;&#x9E21;&#x86CB;&apos;},
-        {itemCode:&apos;&#x9009;&#x9879;3&apos;,itemName:&apos;&#x725B;&#x5976;&apos;}
-    ]&quot;</span>
-    <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;&#x8BF7;&#x9009;&#x62E9;&quot;</span>
-&gt;</span>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">dict</span> <span class="hljs-attr">:dict</span>=<span class="hljs-string">&quot;option&quot;</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">&quot;value&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;&#x8BF7;&#x9009;&#x62E9;&quot;</span>&gt;</span>
+
 <span class="hljs-tag">&lt;/<span class="hljs-name">dict</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;ts&quot;</span>&gt;</span><span class="javascript">
+<span class="hljs-keyword">import</span> Vue <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;vue&apos;</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Vue.extend({
+    <span class="hljs-keyword">return</span>{
+        value: <span class="hljs-string">&apos;&apos;</span>,
+        option: [{itemCode:<span class="hljs-string">&apos;&#x9009;&#x9879;1&apos;</span>,itemName:<span class="hljs-string">&apos;&#x86CB;&#x7CD5;&apos;</span>},
+        {itemCode:<span class="hljs-string">&apos;&#x9009;&#x9879;2&apos;</span>,itemName:<span class="hljs-string">&apos;&#x9E21;&#x86CB;&apos;</span>},
+        {itemCode:<span class="hljs-string">&apos;&#x9009;&#x9879;3&apos;</span>,itemName:<span class="hljs-string">&apos;&#x725B;&#x5976;&apos;</span>}],
+    }
+})
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 </code></pre>
 <h3 id="&#x591A;&#x9009;&#x529F;&#x80FD;">&#x591A;&#x9009;&#x529F;&#x80FD;</h3>
 <p>&#x901A;&#x8FC7;<em>multiple</em>&#x7684;&apos;true&apos;&#x6216;&apos;false&apos;&#x5C5E;&#x6027;&#x503C;&#x53EF;&#x4EE5;&#x8BA9;&#x9009;&#x62E9;&#x680F;&#x4E2D;&#x662F;&#x5426;&#x6DFB;&#x52A0;&#x591A;&#x4E2A;&#x9009;&#x9879;&#x3002;</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">dict</span>
-    <span class="hljs-attr">:dict</span>=<span class="hljs-string">&quot;[
-        {itemCode:&apos;&#x9009;&#x9879;1&apos;,itemName:&apos;&#x86CB;&#x7CD5;&apos;},
-        {itemCode:&apos;&#x9009;&#x9879;2&apos;,itemName:&apos;&#x9E21;&#x86CB;&apos;},
-        {itemCode:&apos;&#x9009;&#x9879;3&apos;,itemName:&apos;&#x725B;&#x5976;&apos;}
-    ]&quot;</span>
-    <span class="hljs-attr">:multiple</span>=<span class="hljs-string">&quot;true&quot;</span>
-    &gt;</span>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">dict</span> <span class="hljs-attr">:dict</span>=<span class="hljs-string">&quot;option&quot;</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">&quot;value&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;&#x8BF7;&#x9009;&#x62E9;&quot;</span>
+    <span class="hljs-attr">multiple</span>= <span class="hljs-attr">true</span>
+&gt;</span>
+
 <span class="hljs-tag">&lt;/<span class="hljs-name">dict</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;ts&quot;</span>&gt;</span><span class="javascript">
+<span class="hljs-keyword">import</span> Vue <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;vue&apos;</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Vue.extend({
+    <span class="hljs-keyword">return</span>{
+        value: <span class="hljs-string">&apos;&apos;</span>,
+        option: [{itemCode:<span class="hljs-string">&apos;&#x9009;&#x9879;1&apos;</span>,itemName:<span class="hljs-string">&apos;&#x86CB;&#x7CD5;&apos;</span>},
+        {itemCode:<span class="hljs-string">&apos;&#x9009;&#x9879;2&apos;</span>,itemName:<span class="hljs-string">&apos;&#x9E21;&#x86CB;&apos;</span>},
+        {itemCode:<span class="hljs-string">&apos;&#x9009;&#x9879;3&apos;</span>,itemName:<span class="hljs-string">&apos;&#x725B;&#x5976;&apos;</span>}],
+    }
+})
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<h3 id="&#x7981;&#x7528;&#x5206;&#x7EC4;&#x4E0B;&#x7684;&#x6240;&#x6709;&#x9009;&#x9879;">&#x7981;&#x7528;&#x5206;&#x7EC4;&#x4E0B;&#x7684;&#x6240;&#x6709;&#x9009;&#x9879;</h3>
+<p>&#x901A;&#x8FC7; <em>disabled</em>&#x8BBE;&#x7F6E; &apos;false&apos;&#x503C;&#x53EF;&#x4EE5;&#x7981;&#x7528;&#x9009;&#x62E9;&#x5668;&#x3002;&#x5176;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;&apos;true&apos;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">dict</span> <span class="hljs-attr">:dict</span>=<span class="hljs-string">&quot;option&quot;</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">&quot;value&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;&#x8BF7;&#x9009;&#x62E9;&quot;</span> 
+    <span class="hljs-attr">disabled</span>= <span class="hljs-attr">true</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">dict</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;ts&quot;</span>&gt;</span><span class="javascript">
+<span class="hljs-keyword">import</span> Vue <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;vue&apos;</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Vue.extend({
+    <span class="hljs-keyword">return</span>{
+        value: <span class="hljs-string">&apos;&apos;</span>,
+        option: [{itemCode:<span class="hljs-string">&apos;&#x9009;&#x9879;1&apos;</span>,itemName:<span class="hljs-string">&apos;&#x86CB;&#x7CD5;&apos;</span>},
+        {itemCode:<span class="hljs-string">&apos;&#x9009;&#x9879;2&apos;</span>,itemName:<span class="hljs-string">&apos;&#x9E21;&#x86CB;&apos;</span>},
+        {itemCode:<span class="hljs-string">&apos;&#x9009;&#x9879;3&apos;</span>,itemName:<span class="hljs-string">&apos;&#x725B;&#x5976;&apos;</span>}],
+    }
+})
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<h3 id="&#x9009;&#x4E2D;&#x5168;&#x90E8;&#x7684;&#x9009;&#x9879;">&#x9009;&#x4E2D;&#x5168;&#x90E8;&#x7684;&#x9009;&#x9879;</h3>
+<p><em>isFilter</em>&#x5C5E;&#x6027;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;&apos;true&apos;&#x7684;&#x5C5E;&#x6027;&#x503C;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x9009;&#x4E2D;&#x5168;&#x90E8;&#x7684;&#x9009;&#x9879;  </p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">dict</span> <span class="hljs-attr">:dict</span>=<span class="hljs-string">&quot;option&quot;</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">&quot;value&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;&#x8BF7;&#x9009;&#x62E9;&quot;</span>
+    <span class="hljs-attr">isFilter</span>= <span class="hljs-attr">true</span>
+&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">dict</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;ts&quot;</span>&gt;</span><span class="javascript">
+<span class="hljs-keyword">import</span> Vue <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;vue&apos;</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Vue.extend({
+    <span class="hljs-keyword">return</span>{
+        value: <span class="hljs-string">&apos;&apos;</span>,
+        option: [{itemCode:<span class="hljs-string">&apos;&#x9009;&#x9879;1&apos;</span>,itemName:<span class="hljs-string">&apos;&#x86CB;&#x7CD5;&apos;</span>},
+        {itemCode:<span class="hljs-string">&apos;&#x9009;&#x9879;2&apos;</span>,itemName:<span class="hljs-string">&apos;&#x9E21;&#x86CB;&apos;</span>},
+        {itemCode:<span class="hljs-string">&apos;&#x9009;&#x9879;3&apos;</span>,itemName:<span class="hljs-string">&apos;&#x725B;&#x5976;&apos;</span>}],
+    }
+})
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 </code></pre>
 <h2 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h2>
 <p>&#x4E0A;&#x8FF0;&#x7684;&#x5C5E;&#x6027;&#x662F;&#x5DF2;&#x7ECF;&#x96C6;&#x6210;&#x5230;&#x7EC4;&#x4EF6;&#xFF0C;&#x4E86;&#x89E3;&#x66F4;&#x591A;&#x76F8;&#x5173;&#x5C5E;&#x6027;&#x548C;&#x7528;&#x6CD5;&#x8BF7;&#x53C2;&#x8003; <a href="http://element-cn.eleme.io/#/zh-CN/component/select" target="_blank">Element</a></p>
@@ -329,6 +395,20 @@
 <td>&apos;String&apos;,&apos;Array&apos;,&apos;Number&apos;</td>
 <td></td>
 <td></td>
+</tr>
+<tr>
+<td>disabled</td>
+<td>&#x7981;&#x7528;&#x9009;&#x578B;</td>
+<td>Boolean</td>
+<td></td>
+<td>true</td>
+</tr>
+<tr>
+<td>isFilter</td>
+<td>&#x9009;&#x4E2D;&#x5168;&#x90E8;&#x9009;&#x9879;</td>
+<td>Boolean</td>
+<td></td>
+<td>true</td>
 </tr>
 </tbody>
 </table>
@@ -375,7 +455,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"DictPlugin选择器","level":"1.1.3","depth":2,"next":{"title":"G2Plugin","level":"1.1.4","depth":2,"path":"text/G2Plugin.md","ref":"text/G2Plugin.md","articles":[]},"previous":{"title":"Container容器高度自适应","level":"1.1.2","depth":2,"path":"text/Container-zi-shi-ying.md","ref":"text/Container-zi-shi-ying.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"text/DictPlugin-xun-ze-qi.md","mtime":"2019-03-14T02:30:13.828Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-16T09:13:43.590Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"DictPlugin选择器","level":"1.1.3","depth":2,"next":{"title":"G2Plugin","level":"1.1.4","depth":2,"path":"text/G2Plugin.md","ref":"text/G2Plugin.md","articles":[]},"previous":{"title":"Container容器高度自适应","level":"1.1.2","depth":2,"path":"text/Container-zi-shi-ying.md","ref":"text/Container-zi-shi-ying.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"text/DictPlugin-xun-ze-qi.md","mtime":"2019-04-03T03:33:02.506Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-03T04:47:25.194Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -383,10 +463,6 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
